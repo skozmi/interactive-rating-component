@@ -13,7 +13,20 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', (req, res, next)=>{
     res.render('main');
-})
+});
+
+app.post('/', (req, res, next)=>{
+    const ratingValue = req.body.ratingInput;
+    if(!ratingValue){
+        res.send('<script>alert("Not rated!"); window.location.href = "/"; </script>');
+    } else {
+        res.render('thank', {ratingStar: ratingValue})
+    }
+});
+
+app.get('/thank', (req, res, next)=>{
+    res.render('thank');
+});
 
 app.listen(PORT, ()=> {
     console.log(`Server is running on port ${PORT}.`);

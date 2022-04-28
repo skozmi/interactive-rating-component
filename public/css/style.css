@@ -1,14 +1,125 @@
 body {
     font-family: 'Overpass', sans-serif;
+    background: hsl(216, 12%, 8%);
     font-size: 15px;
+    color: hsl(217, 12%, 63%);
 }
 
+/*containers*/
+.container-fluid {
+    padding: 3% 7%;
+}
 
+main {
+    margin: 15% 30% 15% 30%;
+    background: hsl(213, 19%, 18%);
+    text-align: center;
+    padding: 3%;
+    border-radius: 25px;
+}
 
+.inform-div {
+    background:hsl(216, 12%, 24%);
+    margin: auto;
+    width: 50%;
+    border-radius: 25px;
+}
 
+/*buttons*/
+.submit-button {
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+    width: 100%;
+    border-radius: 25px;
+    margin: 3% 0 0 0;
+}
 
+.submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);  
+}
 
+.rating-star {
+    background-color: hsl(216, 12%, 24%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 3%;
+}
 
+.rating-btn {
+    background:hsl(216, 12%, 24%);
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    width: 60px;
+    height: 60px;
+    margin: 3% 0;
+}
+
+.rating-btn:hover {
+    background:hsl(217, 12%, 63%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+}
+
+.checked {
+    background: hsl(25, 97%, 53%);
+}
+
+/*images, headings and paragraphs*/
+.big-heading {
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding: 3% 0;
+}
+
+.rating-star, .main-heading, .main-paragraph {
+    text-align: left;
+}
+
+.star-image {
+    width: 100%;
+    padding: 30%;
+}
+
+.thank-image {
+    padding: 5%;
+}
+
+.inform-paragraph {
+    color: hsl(25, 97%, 53%);
+    padding: 5%;  
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:1028px) {
+    main {
+        margin: 15%;
+    }
+}
+
+@media (max-width:600px) {
+    main {
+        margin: 5%;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        font-size: 12px;
+    }
+
+    .rating-star {
+        width: 40px;
+        height: 40px;
+
+    }
+    
+    .rating-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
