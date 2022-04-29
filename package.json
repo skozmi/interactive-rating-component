@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "Miloš Mirković",
   "license": "ISC",
+  "engines": {
+    "node": "17.9.0"
+  },
   "dependencies": {
     "body-parser": "^1.20.0",
     "ejs": "^3.1.6",
